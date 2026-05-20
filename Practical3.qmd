@@ -1,5 +1,4 @@
 # fetch
-
 # cloned copy - practical 4
 
 ---
@@ -7,8 +6,6 @@ title: "Exercise 3"
 format: html
 editor: visual
 ---
-
-BREAK SOMETHING
 
 ```{r}
 library(palmerpenguins)
