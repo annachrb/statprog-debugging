@@ -9,3 +9,15 @@ After I could fix the error myself.
 For testing the debug method I also had the LLM explain the methods first, since I those were new to me.
 I tried to use the methods myself but couldn't really figure it out. I asked the LLM on how to actually use them.
 
+Week 4 - Version Control & Collaborative
+Describe a confusing or frustrating moment with git this week. How did you resolve
+it? What do you now understand that you didn't before?
+
+A frustrating moment was when initialising git. The main branch was called mian which was a setting mispell. Additionally the README section was filled with 'statprog' 4 times which wasn't supposed to be there.
+I tried fixing it with the help of an LLM but it did more trouble than good. So I decided to delete the original repository and start over. The same mistake of the main branch happened again. This time I was able to fix it.
+It took me a few tries and hours but I was able to get the repository clean.
+
+How does committing code frequently change how you think about your work? Have you
+noticed yourself structuring tasks differently because of it?
+
+It makes me think more structured. Completing / Commiting one task first and then moving on to the next one to ensure that the structure doesn't get lost and all task get done cleanly.
