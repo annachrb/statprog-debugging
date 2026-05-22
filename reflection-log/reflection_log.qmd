@@ -27,6 +27,28 @@ ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
 
 ## Week 2 - **Scripts, Functions & Refactoring**
 
+**NSE (Non-Standard Evaluation) Bug:**
+
+When writing a custom function and pass a column name into the function as a variable.
+When using the function, R looks for the variable name in the columns instead of the passed column name.
+
+Example:
+
+```{r}
+#| label: nse-example
+#| code-fold: false
+#| message: false
+#| warning: false
+
+# my_filter_function <- function(data, column, value) { 
+#   filter(data, column == value) 
+# }
+
+# my_filter_function(penguins, species, "Gentoo")
+
+# -> Error
+```
+
 ## Week 3 - Debugging 
 
 Did you use an LLM to help debug?

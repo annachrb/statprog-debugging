@@ -230,6 +230,18 @@ Figure&nbsp;1: Bill length vs Bill depth across penguin species
 </section>
 <section id="week-2---scripts-functions-refactoring" class="level2">
 <h2 class="anchored" data-anchor-id="week-2---scripts-functions-refactoring">Week 2 - <strong>Scripts, Functions &amp; Refactoring</strong></h2>
+<p><strong>NSE (Non-Standard Evaluation) Bug:</strong></p>
+<p>When writing a custom function and pass a column name into the function as a variable. When using the function, R looks for the variable name in the columns instead of the passed column name.</p>
+<p>Example:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># my_filter_function &lt;- function(data, column, value) { </span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="co">#   filter(data, column == value) </span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="co"># }</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="co"># my_filter_function(penguins, species, "Gentoo")</span></span>
+<span id="cb4-6"><a href="#cb4-6"></a></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="co"># -&gt; Error</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </section>
 <section id="week-3---debugging" class="level2">
 <h2 class="anchored" data-anchor-id="week-3---debugging">Week 3 - Debugging</h2>
