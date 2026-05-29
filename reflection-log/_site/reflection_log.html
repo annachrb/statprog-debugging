@@ -160,7 +160,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#week-3---debugging" id="toc-week-3---debugging" class="nav-link" data-scroll-target="#week-3---debugging">Week 3 - Debugging</a></li>
   <li><a href="#week-4---version-control-collaborative" id="toc-week-4---version-control-collaborative" class="nav-link" data-scroll-target="#week-4---version-control-collaborative">Week 4 - Version Control &amp; Collaborative</a></li>
   <li><a href="#week-5---quarto-websites-collaborative-coding" id="toc-week-5---quarto-websites-collaborative-coding" class="nav-link" data-scroll-target="#week-5---quarto-websites-collaborative-coding">Week 5 - Quarto Websites &amp; <strong>Collaborative Coding</strong></a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -238,22 +237,36 @@ Figure&nbsp;1: Bill length vs Bill depth across penguin species
 </section>
 <section id="week-3---debugging" class="level2">
 <h2 class="anchored" data-anchor-id="week-3---debugging">Week 3 - Debugging</h2>
-<p>Did you use an LLM to help debug? What did you share with it, and what approach did it take? Was the answer correct? How did you verify it?</p>
+<p><em>Did you use an LLM to help debug? What did you share with it, and what approach did it take? Was the answer correct? How did you verify it?</em></p>
 <p>I had to fix an error and try the debugging methods. The error was shown on RStudio but I couldn’t see what was wrong. I pasted the code and error message into the LLM and asked it to explain the message and find which line is faulty. After I could fix the error myself.</p>
 <p>For testing the debug method I also had the LLM explain the methods first, since I those were new to me. I tried to use the methods myself but couldn’t really figure it out. I asked the LLM on how to actually use them.</p>
 </section>
 <section id="week-4---version-control-collaborative" class="level2">
 <h2 class="anchored" data-anchor-id="week-4---version-control-collaborative">Week 4 - Version Control &amp; Collaborative</h2>
-<p>Describe a confusing or frustrating moment with git this week. How did you resolve it? What do you now understand that you didn’t before?</p>
+<p><em>Describe a confusing or frustrating moment with git this week. How did you resolve it? What do you now understand that you didn’t before?</em></p>
 <p>A frustrating moment was when initialising git. The main branch was called mian which was a setting mispell. Additionally the README section was filled with ‘statprog’ 4 times which wasn’t supposed to be there. I tried fixing it with the help of an LLM but it did more trouble than good. So I decided to delete the original repository and start over. The same mistake of the missspelled main branch happened again. I decided to look into the settings and found that the name of the original branch, when creating the repository was set to ‘mian’. I was able to set it to ‘main’ and create the original branch with the right name. I moved on to connecting the repository to my folder. It took me a few tries and hours to fix the mistakes, but I was able to get the repository clean.</p>
-<p>How does committing code frequently change how you think about your work? Have you noticed yourself structuring tasks differently because of it?</p>
+<p><em>How does committing code frequently change how you think about your work? Have you noticed yourself structuring tasks differently because of it?</em></p>
 <p>It makes me think more structured. Completing / Commiting one task first and then moving on to the next one to ensure that the structure doesn’t get lost and all task get done cleanly.</p>
 </section>
 <section id="week-5---quarto-websites-collaborative-coding" class="level2">
 <h2 class="anchored" data-anchor-id="week-5---quarto-websites-collaborative-coding">Week 5 - Quarto Websites &amp; <strong>Collaborative Coding</strong></h2>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+<p><em>What is the difference between a Quarto document and a Quarto website project? Describe in your own words what <code>_quarto.yml</code> does and how it changes how you think about organising a multi-file project.</em></p>
+<p>A quarto document is a single page, where as a quarto website is a collection of different quarto documents.</p>
+<p><code>_quarto.yml</code> is the control settings of the whole Quarto website and structures everything. Instead of having to write the settings of the page at the top everytime, it is defined once in the <code>_quarto.yml</code> file. In my opinion, it is much more efficient and gives a structured look since the settings are the same across the website.</p>
+<p><em>Walk through one <code>format:</code> or <code>execute:</code> option you set in <code>_quarto.yml</code> this week. Why did you choose that option, and what effect did it have on the rendered output?</em></p>
+<p>The format is html because I want the output to be a website.</p>
+<p><strong>code-fold: true</strong> - the code will not be directly shown. The user can click on the expandable to show the code. I chose this because it gives a more clean look instead of having pages of code.</p>
+<p><strong>code-summary: “Show code”</strong> - This message will appear on the expandable to specify that there is code and an option to show it.</p>
+<p><strong>code-line-numbers: true</strong> - It shows the line numbers inside of the code chunks. Also for structure.</p>
+<p><strong>code-copy: hover</strong> - When the user hovers over a code chunk it allows them to copy the code.</p>
+<p><strong>theme</strong>: - aesthetics of the website</p>
+<ul>
+<li><p><strong>cosmo</strong> - theme name</p></li>
+<li><p><strong>brand</strong> - allows custom changes on top of the cosmo theme</p></li>
+</ul>
+<p><strong>css: styles.css</strong> - a file that includes specific, custom style changes that are applied to every page</p>
+<p><strong>toc: true</strong> - Table of contents on the right side</p>
+<p><em>Describe a situation this week where you used a git branch, stash, or pull request. What problem were you solving, and would you approach it the same way again?</em></p>
 
 
 </section>

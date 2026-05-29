@@ -31,10 +31,7 @@ ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
 
 ## Week 3 - Debugging
 
-Did you use an LLM to help debug?
-What did you share with it, and what approach did it take?
-Was the answer correct?
-How did you verify it?
+*Did you use an LLM to help debug? What did you share with it, and what approach did it take? Was the answer correct? How did you verify it?*
 
 I had to fix an error and try the debugging methods.
 The error was shown on RStudio but I couldn't see what was wrong.
@@ -47,9 +44,7 @@ I asked the LLM on how to actually use them.
 
 ## Week 4 - Version Control & Collaborative
 
-Describe a confusing or frustrating moment with git this week.
-How did you resolve it?
-What do you now understand that you didn't before?
+*Describe a confusing or frustrating moment with git this week. How did you resolve it? What do you now understand that you didn't before?*
 
 A frustrating moment was when initialising git.
 The main branch was called mian which was a setting mispell.
@@ -62,12 +57,44 @@ I was able to set it to 'main' and create the original branch with the right nam
 I moved on to connecting the repository to my folder.
 It took me a few tries and hours to fix the mistakes, but I was able to get the repository clean.
 
-How does committing code frequently change how you think about your work?
-Have you noticed yourself structuring tasks differently because of it?
+*How does committing code frequently change how you think about your work? Have you noticed yourself structuring tasks differently because of it?*
 
 It makes me think more structured.
 Completing / Commiting one task first and then moving on to the next one to ensure that the structure doesn't get lost and all task get done cleanly.
 
 ## Week 5 - Quarto Websites & **Collaborative Coding**
 
-## 
+*What is the difference between a Quarto document and a Quarto website project? Describe in your own words what `_quarto.yml` does and how it changes how you think about organising a multi-file project.*
+
+A quarto document is a single page, where as a quarto website is a collection of different quarto documents.
+
+`_quarto.yml` is the control settings of the whole Quarto website and structures everything.
+Instead of having to write the settings of the page at the top everytime, it is defined once in the `_quarto.yml` file.
+In my opinion, it is much more efficient and gives a structured look since the settings are the same across the website.
+
+*Walk through one `format:` or `execute:` option you set in `_quarto.yml` this week. Why did you choose that option, and what effect did it have on the rendered output?*
+
+The format is html because I want the output to be a website.
+
+**code-fold: true** - the code will not be directly shown.
+The user can click on the expandable to show the code.
+I chose this because it gives a more clean look instead of having pages of code.
+
+**code-summary: "Show code"** - This message will appear on the expandable to specify that there is code and an option to show it.
+
+**code-line-numbers: true** - It shows the line numbers inside of the code chunks.
+Also for structure.
+
+**code-copy: hover** - When the user hovers over a code chunk it allows them to copy the code.
+
+**theme**: - aesthetics of the website
+
+-   **cosmo** - theme name
+
+-   **brand** - allows custom changes on top of the cosmo theme
+
+**css: styles.css** - a file that includes specific, custom style changes that are applied to every page
+
+**toc: true** - Table of contents on the right side
+
+*Describe a situation this week where you used a git branch, stash, or pull request. What problem were you solving, and would you approach it the same way again?*
